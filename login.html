@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container mt-5 position-relative">
+        <form class=" start-50 translate-middle-x position-absolute p-5">
+            <h1 class="text-center pb-4 text-info">Smart Login System</h1>
+            <!-- Email input -->
+            <div class="form-outline-ligt mb-4">
+                <input type="email" id="emailLogin" placeholder="enter your email" class="form-control bg-transparent text-white" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline-light mb-4">
+                <input type="password" id="passLogin" placeholder="enter your password" class="form-control bg-transparent text-white" />
+
+            </div>
+            <h5 id="loginErrorMessage" class="d-none text-danger text-center mb-4">incorrect email or password</h5>
+
+            <!-- Submit button -->
+            <button type="button" id="loginButton" class="btn btn-outline-info btn-block mb-4 w-100">Login</button>
+            <h6 class="text-white text-center">Don’t have an account? <a class="anchor text-white" href="SignUp.html">Sign Up</a></h6> 
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

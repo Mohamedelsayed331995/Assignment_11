@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container mt-5 position-relative">
+        <form class=" start-50 translate-middle-x position-absolute p-5">
+            <h1 class="text-center pb-4 text-info">Smart Login System</h1>
+            <!--SignUp-->
+            <div class="form-outline-ligt mb-4">
+                <input type="text" id="signUpName" placeholder="enter your name"
+                    class="form-control bg-transparent text-white" />
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline-ligt mb-4">
+                <input type="email" id="signUpEmail" placeholder="enter your email"
+                    class="form-control bg-transparent text-white" />
+                <small id="invalidEmailInput" class="text-danger d-none">invalid email</small>
+
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline-light mb-4">
+                <input type="password" id="signUpPassword" placeholder="enter your password"
+                    class="form-control bg-transparent text-white" />
+                    <small id="invalidPassInput"  class="text-danger d-none">invalid Password</small>
+            </div>
+            <small id="allInputsRequired" class="d-none text-danger text-center mb-4">all inputs required</small>
+            <h5 id="successMsg" class="d-none text-success text-center mb-4">success</h5>
+            <small id="alreadyExist" class="d-none text-danger text-center mb-4">email already exist</small>
+            <!-- Submit button -->
+            <button type="button" id="signUpButtom" class="btn btn-outline-info btn-block mb-4 w-100">Sign Up</button>
+            <h6 class="text-white text-center">You have an account? <a class="anchor text-white"
+                    href="login.html">Signin</a>
+            </h6>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
